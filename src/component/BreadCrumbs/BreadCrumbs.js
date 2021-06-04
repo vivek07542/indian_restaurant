@@ -3,7 +3,6 @@ import {Typography ,Breadcrumbs,Link }  from '@material-ui/core';
 import { withRouter } from "react-router-dom";
 
 const BreadCrumbs = (prop)=>{
-    console.log(prop);
     const {history,location : {pathname}} = prop;
     const pathnames = pathname.split("/").filter(x => x);
 
