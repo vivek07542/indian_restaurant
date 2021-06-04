@@ -1,0 +1,6 @@
+.ErrorLink{
+    color : white;
+}
+.ErrorLink:hover{
+    color : lightgray;
+}

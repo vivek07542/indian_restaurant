@@ -1,0 +1,24 @@
+.table-container{
+   max-width : 577px;
+   width : 100% ;
+}
+
+.table-container__table{
+    width : 100%;
+    border-collapse : collapse;
+}
+thead{
+    background-color: transparent;
+    border-bottom: 1px solid rgba(225,225 , 225, 0.7) ; 
+    color:rgba(225,225 , 225, 0.9);
+}
+td,th{
+    color:white;
+    text-align:center;
+}
+tr :nth-child(odd){
+    background-color:rgba(0, 0, 0, 0.6) ;
+}
+tr{
+    background-color: rgba(0, 0, 0, 0.5);
+}
