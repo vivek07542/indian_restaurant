@@ -114,7 +114,7 @@ const RecipeGenerator = () => {
                                     <p className="invalid-feedback">{errors.serving.message}</p>
                                 )}
                             </div>
-                            <Button type="submit" disabled = {!foodDisplay}>Generate</Button>        
+                            <Button type="submit" >Generate</Button>        
                         </form>
                     </div>
                 </FormWrapper>
