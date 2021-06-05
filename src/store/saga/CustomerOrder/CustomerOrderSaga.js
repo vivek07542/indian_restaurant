@@ -8,13 +8,15 @@ export function* initlizeOrderSaga(){
     if(foodItemValue === null){
         foodItemValue = []
     }  
-    if(localCustomerOrder === null ){
+    if(localCustomerOrder === null || localCustomerOrder.length === 0 ){
         localCustomerOrder = [];
         customerLastOrder = 0;
     }
     else {
-            const customerLastOrderItem = localCustomerOrder[localCustomerOrder.length - 1];
-            customerLastOrder = +customerLastOrderItem.id;     
+            if(localCustomerOrder.length !== 0){
+                const customerLastOrderItem = localCustomerOrder[localCustomerOrder.length - 1];
+                customerLastOrder = +customerLastOrderItem.id;     
+            }
         }
     let orderId = customerLastOrder + 1
     yield localStorage.setItem("foodItemArray",JSON.stringify(foodItemValue));
