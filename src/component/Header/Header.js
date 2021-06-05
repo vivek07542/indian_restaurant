@@ -46,17 +46,17 @@ return (
                   Admin Backend
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item" to="/admin/quantity">Quantity</Link>
-                  <Link className="dropdown-item" to="/admin/unit">Unit</Link>
-                  <Link className="dropdown-item" to="/admin/ingredientmaster">Ingridient Master</Link>
-                  <Link className="dropdown-item" to="/admin/vendormaster">Vendor Master</Link>
-                  <Link className="dropdown-item" to="/admin/vendoringredientmapping">Vendor Ingridient Mapping</Link>
-                  <Link className="dropdown-item" to="/admin/itemrecipe">Item Reciepe</Link>
-                  <Link className="dropdown-item" to="/admin/recipegenerator">Reciepe Generator</Link>
-                  <Link className="dropdown-item" to="/admin/inventory">Inventory</Link>
-                  <Link className="dropdown-item" to="/admin/monthlyexpense">Monthly Expense</Link>
-                  <Link className="dropdown-item" to="/admin/investmentbudget">Investment Budget</Link>
-                  <Link className="dropdown-item" to="/admin/tablereservation">Table Reservation</Link>
+                  <Link className="dropdown-item" to="/quantity">Quantity</Link>
+                  <Link className="dropdown-item" to="/unit">Unit</Link>
+                  <Link className="dropdown-item" to="/ingredientmaster">Ingridient Master</Link>
+                  <Link className="dropdown-item" to="/vendormaster">Vendor Master</Link>
+                  <Link className="dropdown-item" to="/vendoringredientmapping">Vendor Ingridient Mapping</Link>
+                  <Link className="dropdown-item" to="/itemrecipe">Item Reciepe</Link>
+                  <Link className="dropdown-item" to="/recipegenerator">Reciepe Generator</Link>
+                  <Link className="dropdown-item" to="/inventory">Inventory</Link>
+                  <Link className="dropdown-item" to="/monthlyexpense">Monthly Expense</Link>
+                  <Link className="dropdown-item" to="/investmentbudget">Investment Budget</Link>
+                  <Link className="dropdown-item" to="/tablereservation">Table Reservation</Link>
               </div>
           </li>
           <li className="nav-item dropdown">
@@ -65,9 +65,9 @@ return (
                   Reports
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item" to="/reports/orderdetail">Order Detail</Link>
-                  <Link className="dropdown-item" to="/reports/topsellingdishes">Top Selling Dishes</Link>
-                  <Link className="dropdown-item" to="/reports/profitlossmaster">Profilt Loss Master</Link>
+                  <Link className="dropdown-item" to="/orderdetail">Order Detail</Link>
+                  <Link className="dropdown-item" to="/topsellingdishes">Top Selling Dishes</Link>
+                  <Link className="dropdown-item" to="/profitlossmaster">Profilt Loss Master</Link>
               </div>
           </li>
       </ul>

@@ -58,7 +58,7 @@ export const AutoComplete = (e,Array,elementValue,setArray,setDisplay,setIndex,i
                     "This Ingridient Not Mapped with Vendor..Please Click to Add"
                    );
                  if (adminDecision) {
-                     window.location.href = "/admin/vendoringredientmapping";
+                     window.location.href = "#/vendoringredientmapping";
                  } 
             }
             else{
@@ -66,7 +66,7 @@ export const AutoComplete = (e,Array,elementValue,setArray,setDisplay,setIndex,i
                     "This Ingridient Not In List..Please Click to Add"
                    );
                  if (adminDecision) {
-                     window.location.href = "/admin/ingredientmaster";
+                     window.location.href = "#/ingredientmaster";
                  }
             }
         }
@@ -76,7 +76,7 @@ export const AutoComplete = (e,Array,elementValue,setArray,setDisplay,setIndex,i
                 "This Food Item Not In List..Please Click to Add"
                );
              if (adminDecision) {
-                 window.location.href = "/";
+                 window.location.href = "#/";
              }
         }
 
@@ -85,7 +85,7 @@ export const AutoComplete = (e,Array,elementValue,setArray,setDisplay,setIndex,i
                 "This Vendor Not In List..Please Click to Add"
                );
              if (adminDecision) {
-                 window.location.href = "/admin/vendormaster";
+                 window.location.href = "#/vendormaster";
              }
         }
     }

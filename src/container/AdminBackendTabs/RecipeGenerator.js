@@ -7,12 +7,13 @@ import classNames from "classnames";
 import { useForm } from "react-hook-form";
 import * as action from "../../store/reducer/RecipeGeneratorReducer/RecipeGeneratorReducer";
 import { AutoComplete } from "../../Utility/AutoComplete";
+import { VerifyItem } from '../../Utility/VerifyItem';
 const RecipeGenerator = () => {
     const { register, handleSubmit, formState: { errors, isValid, isSubmitted }, reset,setValue } = useForm({ mode: "onChange" })
 
     const [foodDisplay, setFoodDisplay] = useState(false);
     const [foodarray, setFoodArray] = useState(null);
-
+    const[disabledValue, setDisabledValue] =  useState(true);   
     const dispatch = useDispatch();
 
     let recipeGeneratorArray = useSelector((state) => state.RecipeGenerator.recipeGeneratorArray);
@@ -76,6 +77,7 @@ const RecipeGenerator = () => {
                                                             shouldValidate: true,
                                                         });
                                                         setFoodDisplay(false);
+                                                        VerifyItem(item.foodItem,"itemRecipeArray","recipeCheck",setDisabledValue);
                                                     }}
                                                     className="drop border border-bottom-1"
                                                 >
@@ -114,10 +116,11 @@ const RecipeGenerator = () => {
                                     <p className="invalid-feedback">{errors.serving.message}</p>
                                 )}
                             </div>
-                            <Button type="submit" >Generate</Button>        
+                            <Button type="submit" disabled = {disabledValue} >Generate</Button>        
                         </form>
                     </div>
                 </FormWrapper>
+                {recipeGeneratorArray.length !== 0  &&  
                 <div className="col-lg-6 col-sm-12  ">                    
                    <TableWrapper
                         tableData = {recipeGeneratorArray}
@@ -130,6 +133,7 @@ const RecipeGenerator = () => {
                          <p> Total Price : {totalPrice}</p>
                     </div>
                 </div>
+                }
             </div>
         </div>
     )

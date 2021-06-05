@@ -31,20 +31,20 @@ const ResturantPage = () => {
         <>
             <BreadCrumbs/>
             <Switch>
-                <Route path = "/reports/topsellingdishes" component = {TopSellingDishes}/>
-                <Route path = "/reports/profitlossmaster" component = {ProfitLossMaster}/>
-                <Route path = "/reports/orderdetail" component = {OrderDetail}/>
-                <Route path = "/admin/tablereservation" component = {TableReservation}/>
-                <Route path = "/admin/vendormaster" component = {VendorMaster}/>
-                <Route path = "/admin/vendoringredientmapping" component = {VendorIngredientMapping}/>
-                <Route path = "/admin/recipegenerator" component = {RecipeGenerator}/>
-                <Route path = "/admin/quantity" component = {Quantity}/>
-                <Route path = "/admin/unit" component = {Unit}/>
-                <Route path = "/admin/monthlyexpense" component = {MonthlyExpense}/>
-                <Route path = "/admin/itemrecipe" component = {ItemRecipe}/>
-                <Route path = "/admin/investmentbudget" component = {InvestmentBudget}/>
-                <Route path = "/admin/inventory" component = {Inventory}/>
-                <Route path = "/admin/ingredientmaster" component = {IngredientMaster}/>
+                <Route path = "/topsellingdishes" component = {TopSellingDishes}/>
+                <Route path = "/profitlossmaster" component = {ProfitLossMaster}/>
+                <Route path = "/orderdetail" component = {OrderDetail}/>
+                <Route path = "/tablereservation" component = {TableReservation}/>
+                <Route path = "/vendormaster" component = {VendorMaster}/>
+                <Route path = "/vendoringredientmapping" component = {VendorIngredientMapping}/>
+                <Route path = "/recipegenerator" component = {RecipeGenerator}/>
+                <Route path = "/quantity" component = {Quantity}/>
+                <Route path = "/unit" component = {Unit}/>
+                <Route path = "/monthlyexpense" component = {MonthlyExpense}/>
+                <Route path = "/itemrecipe" component = {ItemRecipe}/>
+                <Route path = "/investmentbudget" component = {InvestmentBudget}/>
+                <Route path = "/inventory" component = {Inventory}/>
+                <Route path = "/ingredientmaster" component = {IngredientMaster}/>
                 <Route path = "/customerorder" component = {CustomerOrder}/>
                 <Route path = "/direction" component = {Direction}/>
                 <Route exact path = "/" component = {FoodItem}/>
